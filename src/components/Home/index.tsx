@@ -1,5 +1,6 @@
 import Sheet from "@mui/joy/Sheet";
 import { Section1 } from "./Section1";
+import { Section2 } from "./Section2";
 
 export default function Home() {
   return (
@@ -9,7 +10,17 @@ export default function Home() {
         pt: "10dvh",
       }}
     >
-      <Section1 />
+      <div style={{ overflow: "hidden" }}>
+        <Section1 />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div style={{ overflow: "hidden" }}>
+        <Section2 />
+      </div>
     </Sheet>
   );
 }

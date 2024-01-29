@@ -6,7 +6,7 @@ export const Section1 = () => {
       <Stack
         sx={{
           px: { xs: 2, md: 10 },
-          mt: { xs: 2, md: 10 },
+          mt: { xs: 2, md: 5 },
           overflow: "hidden",
         }}
         direction={{ md: "row" }}
