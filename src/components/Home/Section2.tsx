@@ -5,7 +5,7 @@ export const Section2 = () => {
     <Stack direction={{ md: "row" }} sx={{}}>
       <Stack
         sx={{
-          background: "linear-gradient(180deg, #F4F4F4 50%, #FFFFFF 50%)",
+          background: "linear-gradient(180deg, #F4F4F4 60%, #FFFFFF 50%)",
           px: { md: 10 },
           pt: 10,
         }}
@@ -14,13 +14,13 @@ export const Section2 = () => {
         spacing={5}
       >
         <img src="/elevator_2.png" style={{ flex: 1 }} />
-        <Stack spacing={10} sx={{ flex: 1, p: 15, px: 10 }}>
+        <Stack spacing={10} sx={{ flex: 1, p: 15, px: 20 }}>
           <Stack spacing={3}>
-            <Typography level="body-sm">ABOUT US</Typography>
+            <Typography level="body-lg">ABOUT US</Typography>
             <Typography level="h2">
               Discover the Future of Home Mobility
             </Typography>
-            <Typography level="body-xs">
+            <Typography level="body-md">
               A self-supporting home lifts, built with bulletproof glass,
               aircraft-grade aluminium and galvanized steel. It provides an
               elegant design, European safety standards, and zero impact on your

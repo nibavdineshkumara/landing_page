@@ -44,6 +44,7 @@ export const Section1 = () => {
           zIndex: 1,
           height: { xs: 900, md: 700 },
           width: "100%",
+          overflow: "hidden",
         }}
       >
         <img src="/mountain.svg" style={{ objectFit: "cover" }} />
@@ -69,7 +70,7 @@ export const Section1 = () => {
       >
         <Stack spacing={2}>
           <Button
-            sx={{ color: "white", bgcolor: "#0000000", width: "max-content" }}
+            sx={{ color: "white", bgcolor: "#444159", width: "max-content" }}
           >
             What Makes Us Unique
           </Button>
