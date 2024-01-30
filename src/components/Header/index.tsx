@@ -20,19 +20,12 @@ export const Header = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Stack direction={"row"} alignItems={"center"} pl={10}>
+        <Stack direction={"row"} alignItems={"center"} pl={10} pt={2}>
           <Link>
-            <Image
-              src="/logo.svg"
-              alt="Nibav Logo"
-              className="dark:invert"
-              width={80}
-              height={80}
-              priority
-            />
+            <img src="/logo.svg" alt="Nibav Logo" className="dark:invert" />
           </Link>
         </Stack>
-        <Stack direction={"row"} spacing={3} pr={10} alignItems={"center"}>
+        <Stack direction={"row"} spacing={10} pr={10} alignItems={"center"}>
           <HeaderLink>About Us</HeaderLink>
           <HeaderLink>Products</HeaderLink>
           <HeaderLink>Gallery</HeaderLink>
