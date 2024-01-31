@@ -24,6 +24,9 @@ const primary = {
 export const muiTheme = extendMuiTheme({
   // This is required to point to `var(--joy-*)` because we are using `CssVarsProvider` from Joy UI.
   cssVarPrefix: "joy",
+  typography: {
+    fontFamily: "SF Pro Display', sans-serif",
+  },
   colorSchemes: {
     light: {
       palette: {
