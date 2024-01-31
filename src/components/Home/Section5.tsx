@@ -8,7 +8,7 @@ const Standard = [
   },
   {
     color: "#e0e0c5",
-    label: "standardYellow",
+    label: "cream",
   },
 ];
 const Premium = [
@@ -26,7 +26,7 @@ const Premium = [
   },
   {
     color: "#c7423b",
-    label: "red",
+    label: "brown",
   },
   {
     color: "#324a89",
@@ -40,11 +40,11 @@ const Premium = [
 const Metallic = [
   {
     color: "#ba9d57",
-    label: "yellow",
+    label: "gold",
   },
   {
     color: "#d5e0d2",
-    label: "lightgreen",
+    label: "silver",
   },
 ];
 export const Section5 = () => {
