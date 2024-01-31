@@ -70,20 +70,15 @@ export const Section5 = () => {
     >
       <Box
         sx={{
-          background: "url(/mountain_bg.svg) no-repeat",
+          background: "url(/mountain_bg.svg)",
           backgroundSize: "cover",
-          height: { xs: "736px", sm: "836px", md: "836px" },
+          height: { xs: "180px", sm: "280px", md: "596px" },
           width: { xs: "100%" },
           // backgroundRepeat: "repeat-x",
           //   backgroundPosition: "right bottom",
           position: "absolute",
           zIndex: 1,
-          marginTop: 1,
-          backgroundPosition: {
-            xs: "-1200px 500px",
-            sm: "-800px, 1900px",
-            md: "unset",
-          },
+          marginTop: { xs: 60, sm: 30, md: 0 },
         }}
       />
       <Stack
