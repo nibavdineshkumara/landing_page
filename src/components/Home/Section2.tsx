@@ -17,7 +17,7 @@ export const Section2 = () => {
         <Hidden mdUp>
           <Certified />
         </Hidden>
-        <img src="/elevator_2.png" style={{ flex: 1, margin: 20 }} />
+        <img src="/elevator_2.jpg" style={{ flex: 1, margin: 20 }} />
         <Stack
           spacing={10}
           sx={{
