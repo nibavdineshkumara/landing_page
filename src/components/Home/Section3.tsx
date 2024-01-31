@@ -9,7 +9,7 @@ export const Section3 = () => {
           sx={{
             fontSize: { xs: 36, md: 64 },
             fontWeight: 500,
-            my: 10,
+            my: { xs: 2, md: 10 },
             px: 2,
             textAlign: "center",
           }}
@@ -65,7 +65,7 @@ const SectionCard = (props: SectionCardProps) => {
   return (
     <Card
       sx={{
-        p: "40px",
+        p: { xs: 2, md: "40px" },
         bgcolor: "#F4F4F4",
         width: "350px",
         minHeight: "327px",

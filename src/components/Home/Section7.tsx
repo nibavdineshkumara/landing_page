@@ -59,7 +59,7 @@ export const Section7 = () => {
               {KeyAdvantages?.map((advantage) => (
                 <>
                   <KeyAdvantage key={advantage.icon} {...advantage} />
-                  <Divider sx={{ background: "white" }} />
+                  <Divider sx={{ background: "#414141" }} />
                 </>
               ))}
             </Stack>
