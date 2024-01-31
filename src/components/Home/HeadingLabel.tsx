@@ -38,7 +38,7 @@ const Label = ({ children }: any) => {
       sx={{
         fontSize: { xs: 36, md: 64 },
         fontWeight: 500,
-        my: 10,
+        my: { xs: 2, md: 10 },
         px: 2,
         textAlign: "center",
       }}
