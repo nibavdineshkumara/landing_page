@@ -1,4 +1,12 @@
-import { Box, Divider, IconButton, Stack, Typography } from "@mui/joy";
+import {
+  Box,
+  Divider,
+  IconButton,
+  Stack,
+  Typography,
+  useTheme,
+} from "@mui/joy";
+import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
 
 const Standard = [
@@ -55,6 +63,8 @@ export const Section5 = () => {
   const onSelectVariant = (color: string) => {
     setSelectedColor(color);
   };
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Stack
       sx={
@@ -70,15 +80,15 @@ export const Section5 = () => {
     >
       <Box
         sx={{
-          background: "url(/mountain_bg.svg)",
-          backgroundSize: "cover",
-          height: { xs: "180px", sm: "280px", md: "596px" },
+          background: "url(/mountain_bg.svg) no-repeat",
+          backgroundSize: { xs: "contain", sm: "fill" },
+          height: { xs: "600px", sm: "596px" },
           width: { xs: "100%" },
           // backgroundRepeat: "repeat-x",
-          //   backgroundPosition: "right bottom",
+          backgroundPosition: "right top",
           position: "absolute",
           zIndex: 1,
-          marginTop: { xs: 60, sm: 30, md: 0 },
+          marginTop: { xs: 40, sm: 20, md: 10 },
         }}
       />
       <Stack
@@ -110,7 +120,10 @@ export const Section5 = () => {
         >
           <Stack sx={{ flex: 5, alignItems: "center" }}>
             <div>
-              <img src={`/color_variants/${selectedColor}.png`} height={670} />
+              <img
+                src={`/color_variants/${selectedColor}.png`}
+                height={isMobile ? 458 : 670}
+              />
             </div>
           </Stack>
           <Stack
