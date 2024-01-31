@@ -1,0 +1,35 @@
+.swiper-slide {
+  /* width: 750px !important; */
+}
+
+.flag-switzerland-1-icon {
+  width: 100%;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1052px;
+  object-fit: cover;
+  opacity: 0.1;
+  mix-blend-mode: luminosity;
+  color: black;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none !important;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+video::-webkit-media-controls-current-time-display {
+  display: none !important;
+}
