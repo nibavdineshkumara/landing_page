@@ -32,7 +32,8 @@ export const Section1 = () => {
         </Stack>
         <Stack
           sx={{
-            height: { xs: 1250 },
+            // height: { xs: 1250 },
+            height: "100%",
             pr: { md: 15 },
             flex: { md: 6 },
           }}
