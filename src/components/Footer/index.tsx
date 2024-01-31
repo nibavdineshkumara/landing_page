@@ -15,7 +15,7 @@ export const Footer = () => {
         backgroundColor: "black",
       }}
       p={{ xs: 2, sm: 5, md: 10 }}
-      pb={2}
+      pb={"16px !important"}
       spacing={5}
     >
       <Stack
@@ -39,11 +39,11 @@ export const Footer = () => {
             size="lg"
             placeholder="E-mail"
             sx={{ width: { xs: "90%", sm: "100%" }, alignSelf: "center" }}
-            endDecorator={<Button>Subscribe</Button>}
+            endDecorator={<Button variant="outlined">Subscribe</Button>}
           />
         </Stack>
       </Stack>
-      <Divider sx={{ bgcolor: "white" }} />
+      <Divider sx={{ bgcolor: "#838383" }} />
       <Stack
         direction={{ sm: "row" }}
         sx={{ justifyContent: "space-between", alignItems: "center", gap: 3 }}
@@ -57,7 +57,7 @@ export const Footer = () => {
           <img src="/social_media_icons/pinterest.png" />
         </Stack>
       </Stack>
-      <Divider sx={{ bgcolor: "white" }} />
+      <Divider sx={{ bgcolor: "#838383" }} />
 
       <Stack
         direction={{ sm: "row" }}
@@ -70,7 +70,7 @@ export const Footer = () => {
             Corporate Office Address
           </Typography>
           <Typography level="body-sm" sx={{ color: "white" }}>
-            NIBAV LIFTS INC,Office No 227/228Suite 200, 5700 Yonge
+            NIBAV LIFTS INC,Office No 227/228Suite 200, <br /> 5700 Yonge
             StreetToronto, ON M2M 4K2
           </Typography>
         </Stack>
@@ -101,7 +101,7 @@ export const Footer = () => {
           </Typography>
         </Stack>
       </Stack>
-      <Divider sx={{ bgcolor: "white" }} />
+      <Divider sx={{ bgcolor: "#838383" }} />
       <Stack
         direction={{ sm: "row" }}
         sx={{
