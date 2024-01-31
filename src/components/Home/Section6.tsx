@@ -8,19 +8,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Recents = [
   {
     id: 1,
-    img: "/recents/1.png",
+    img: "/recents/1.jpg",
   },
   {
     id: 2,
-    img: "/recents/2.png",
+    img: "/recents/2.jpg",
   },
   {
     id: 3,
-    img: "/recents/3.png",
+    img: "/recents/3.jpg",
   },
   {
     id: 4,
-    img: "/recents/2.png",
+    img: "/recents/4.jpg",
   },
 ];
 export const Section6 = () => {
@@ -57,7 +57,10 @@ export const Section6 = () => {
           style={{ width: "100%" }}
         >
           {Recents?.map((recent) => (
-            <SwiperSlide style={{ height: "550px !important" }} key={recent.id}>
+            <SwiperSlide
+              style={{ height: isDesktop ? "550px !important" : "400px" }}
+              key={recent.id}
+            >
               <img src={recent.img} width={"100%"} height={"550px"} />
             </SwiperSlide>
           ))}

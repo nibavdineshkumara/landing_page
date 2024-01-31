@@ -54,7 +54,10 @@ export const Section8 = () => {
           style={{ width: "100%" }}
         >
           {Recents?.map((recent) => (
-            <SwiperSlide style={{ height: "550px !important" }} key={recent.id}>
+            <SwiperSlide
+              style={{ height: isDesktop ? "550px !important" : "400px" }}
+              key={recent.id}
+            >
               <div style={{ width: "100%", height: "550px" }}>
                 <Video src={recent.src} />
               </div>
