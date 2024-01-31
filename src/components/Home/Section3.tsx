@@ -6,7 +6,13 @@ export const Section3 = () => {
       <Stack sx={{ alignItems: "center" }}>
         <Typography
           level="h1"
-          sx={{ fontSize: { xs: 36, md: 64 }, fontWeight: 500, my: 10 }}
+          sx={{
+            fontSize: { xs: 36, md: 64 },
+            fontWeight: 500,
+            my: 10,
+            px: 2,
+            textAlign: "center",
+          }}
         >
           Why Choose Nibav Home Lifts
         </Typography>
@@ -80,7 +86,7 @@ const SectionCard = (props: SectionCardProps) => {
         >
           <img src={props?.icon} />
         </Box>
-        <Typography fontWeight={"bold"} sx={{}}>
+        <Typography fontWeight={"bold"} sx={{ fontSize: 24 }}>
           {props?.title}
         </Typography>
         <Typography fontSize={14}>{props?.body}</Typography>
