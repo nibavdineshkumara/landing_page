@@ -11,7 +11,7 @@ export const Section2 = () => {
         sx={{
           background: "linear-gradient(180deg, #F4F4F4 65%, #FFFFFF 50%)",
           px: { md: 10 },
-          pt: 10,
+          pt: { md: 10 },
         }}
         justifyContent={"flex-end"}
         direction={{ xs: "column-reverse", md: "row" }}
