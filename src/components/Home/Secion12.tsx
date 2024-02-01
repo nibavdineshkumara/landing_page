@@ -1,5 +1,4 @@
 import { Box, Button, Stack, Typography } from "@mui/joy";
-import "./styles.module.css";
 import { Counts } from "./Section1";
 import Image from "next/image";
 export const Section12 = () => {
