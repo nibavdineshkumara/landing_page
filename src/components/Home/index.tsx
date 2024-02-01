@@ -9,6 +9,7 @@ import { Section7 } from "./Section7";
 import { Section8 } from "./Section8";
 import { Section9 } from "./Section9";
 import { Section41 } from "./Section41";
+import { Section12 } from "./Secion12";
 
 export default function Home() {
   return (
@@ -19,9 +20,9 @@ export default function Home() {
       }}
     >
       <div style={{ overflow: "hidden" }}>
-        <Section1 />
+        <Section12 />
       </div>
-      <div style={{ overflow: "hidden" }}>
+      <div style={{}}>
         <Section2 />
       </div>
       <div>
