@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Provider } from "@/components/Provider";
 import Image from "next/image";
 import * as React from "react";
-
+import { RM } from "@request-metrics/browser-agent";
 export const metadata = {
   title: "Nibav Lifts",
   description: "Now Luxury in Every Home",
@@ -37,6 +37,9 @@ const PreloadImages = () => {
   );
 };
 export default function RootLayout(props: { children: React.ReactNode }) {
+  RM.install({
+    token: "z8kh3ih:d2ij8eg",
+  });
   return (
     <html lang="en">
       <body style={{ margin: 0 }}>
