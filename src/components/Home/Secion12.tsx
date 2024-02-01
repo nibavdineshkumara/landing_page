@@ -10,13 +10,17 @@ export const Section12 = () => {
           flex: 12,
           zIndex: 4,
           px: { xs: 2, md: 10 },
-          maxWidth: { md: "60%", lg: "50%" },
+
           position: "absolute",
         }}
       >
         <Typography
           level="h1"
-          sx={{ fontSize: { xs: 32, md: 58 }, fontWeight: 600 }}
+          sx={{
+            fontSize: { xs: 32, md: 58 },
+            fontWeight: 600,
+            maxWidth: { md: "70%", lg: "55%" },
+          }}
         >
           Revolutionise Your Home with NIBAV Home Lifts in Switzerland!
         </Typography>
@@ -28,7 +32,7 @@ export const Section12 = () => {
       </Stack>
       <Stack
         sx={{
-          marginTop: 10,
+          marginTop: { xs: "50%", sm: 10 },
           //   minHeight: { xs: "100dvh", sm: "80dvh", md: "90dvh" },
           background: "url(/mountain.svg)",
           objectFit: "fill",
@@ -62,7 +66,7 @@ export const Section12 = () => {
               //   bgcolor: "green",
             }}
           >
-            <Stack spacing={2} sx={{ width: "100%" }}>
+            <Stack spacing={2} sx={{ width: "100%", marginBottom: 10 }}>
               <Button
                 sx={{
                   color: "white",
@@ -126,8 +130,9 @@ export const Section12 = () => {
             position: "absolute",
             right: { md: "12%", lg: "25%" },
             alignSelf: "center",
-            top: { xs: "3%", md: "2%" },
+            top: { xs: "4.5%", md: "2%" },
             overflow: "hidden",
+            height: { xs: "5%", sm: "unset" },
           }}
         >
           <Image
