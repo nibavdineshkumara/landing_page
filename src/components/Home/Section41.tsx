@@ -105,7 +105,10 @@ export const Section41 = () => {
           style={{ width: "100%" }}
         >
           {ModelsData?.map((model) => (
-            <SwiperSlide style={{ height: "550px !important" }} key={model.id}>
+            <SwiperSlide
+              style={{ height: "550px !important", maxWidth: 580 }}
+              key={model.id}
+            >
               <Slide {...model} />
             </SwiperSlide>
           ))}
