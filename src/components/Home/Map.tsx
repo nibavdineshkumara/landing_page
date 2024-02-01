@@ -7,7 +7,7 @@ export const Map = () => {
         height="600"
         style={{ border: 0 }}
         allowFullScreen
-        loading="lazy"
+        loading="eager"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </>
