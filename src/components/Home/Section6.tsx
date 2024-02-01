@@ -59,7 +59,10 @@ export const Section6 = () => {
         >
           {Recents?.map((recent) => (
             <SwiperSlide
-              style={{ height: isDesktop ? "550px !important" : "300px" }}
+              style={{
+                height: isDesktop ? "550px !important" : "300px",
+                maxWidth: 690,
+              }}
               key={recent.id}
             >
               <Image layout="fill" src={recent.img} alt={recent.img} />
