@@ -23,7 +23,12 @@ export const Section2 = () => {
           src="/elevator_2.jpg"
           height={659}
           width={590}
-          style={{ flex: 1, margin: 20, alignSelf: "center" }}
+          style={{
+            flex: 1,
+            margin: 20,
+            alignSelf: "center",
+            maxWidth: "590px",
+          }}
         />
         <Stack
           spacing={10}
@@ -34,7 +39,14 @@ export const Section2 = () => {
             pt: { xs: 10, sm: 5 },
           }}
         >
-          <Stack spacing={3} sx={{ textAlign: { xs: "center", md: "unset" } }}>
+          <Stack
+            spacing={3}
+            sx={{
+              textAlign: { xs: "center", md: "unset" },
+              minHeight: "60%",
+              maxWidth: { lg: "50%" },
+            }}
+          >
             <Typography>ABOUT US</Typography>
             <Typography
               sx={{ fontSize: { xs: 32, sm: 40 }, fontWeight: "bold" }}
