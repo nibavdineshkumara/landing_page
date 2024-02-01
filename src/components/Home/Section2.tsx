@@ -1,8 +1,10 @@
-import { Button, Stack, Typography } from "@mui/joy";
-import { Hidden } from "@mui/material";
+import { Button, Stack, Typography, useTheme } from "@mui/joy";
+import { Hidden, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 
 export const Section2 = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Stack direction={{ md: "row" }} sx={{}}>
       <Stack
@@ -22,7 +24,7 @@ export const Section2 = () => {
           alt="elevator"
           src="/elevator_2.jpg"
           height={659}
-          width={590}
+          width={isMobile ? 350 : 590}
           style={{
             flex: 1,
             margin: 20,
