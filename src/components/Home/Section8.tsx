@@ -91,7 +91,11 @@ export const Section8 = () => {
         >
           {Reviews?.map((review) => (
             <SwiperSlide
-              style={{ width: "550px !important", height: "350px !important" }}
+              style={{
+                width: "550px !important",
+                height: "350px !important",
+                maxWidth: "550px",
+              }}
               key={review.id}
             >
               <div style={{ width: "550px", height: "350px" }}>
