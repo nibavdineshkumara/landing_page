@@ -7,6 +7,7 @@ import {
   useTheme,
 } from "@mui/joy";
 import { useMediaQuery } from "@mui/material";
+import Image from "next/image";
 import { useState } from "react";
 
 const Standard = [
@@ -120,9 +121,12 @@ export const Section5 = () => {
         >
           <Stack sx={{ flex: 5, alignItems: "center" }}>
             <div>
-              <img
+              <Image
+                alt={selectedColor}
+                width={120}
                 src={`/color_variants/${selectedColor}.png`}
                 height={isMobile ? 458 : 670}
+                loading="lazy"
               />
             </div>
           </Stack>
