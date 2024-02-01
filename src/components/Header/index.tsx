@@ -48,8 +48,8 @@ export const Header = () => {
       <HideOnScroll trigger={isFixed}>
         <Sheet
           sx={{
-            backdropFilter: "blur(20px)",
-            bgcolor: "transparent",
+            // backdropFilter: "blur(20px)",
+            // bgcolor: "transparent",
             position: "fixed",
             zIndex: 999,
             width: "100%",
@@ -61,6 +61,7 @@ export const Header = () => {
             direction={"row"}
             justifyContent={"space-between"}
             alignItems={"center"}
+            height={"100%"}
           >
             <Stack
               direction={"row"}
@@ -69,7 +70,7 @@ export const Header = () => {
               pt={2}
             >
               <Link>
-                <img src="/logo.png" alt="Nibav Logo" className="dark:invert" />
+                <img src="/logo.svg" alt="Nibav Logo" className="dark:invert" />
               </Link>
             </Stack>
             <Stack

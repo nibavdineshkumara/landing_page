@@ -48,7 +48,7 @@ export const Footer = () => {
         direction={{ sm: "row" }}
         sx={{ justifyContent: "space-between", alignItems: "center", gap: 3 }}
       >
-        <img src="/logo.png" />
+        <img src="/logo_white.png" width={200} height={60} />
         <Stack direction={"row"} spacing={5}>
           <img src="/social_media_icons/facebook.png" />
           <img src="/social_media_icons/instagram.png" />
