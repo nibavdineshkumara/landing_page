@@ -1,5 +1,6 @@
 import { Button, Stack, Typography, useTheme } from "@mui/joy";
 import { Hidden, useMediaQuery } from "@mui/material";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -58,10 +59,10 @@ export const Section6 = () => {
         >
           {Recents?.map((recent) => (
             <SwiperSlide
-              style={{ height: isDesktop ? "550px !important" : "400px" }}
+              style={{ height: isDesktop ? "550px !important" : "300px" }}
               key={recent.id}
             >
-              <img src={recent.img} width={"100%"} height={"550px"} />
+              <Image layout="fill" src={recent.img} alt={recent.img} />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -18,6 +18,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { useRef } from "react";
 import { ArrowLeft, ArrowLeftOutlined, ArrowRight } from "@mui/icons-material";
+import Image from "next/image";
 
 const StaticAction = (
   <Stack direction={"row"} spacing={2}>
@@ -183,7 +184,9 @@ const Slide = (props: ModelsDataType) => {
           zIndex: 1,
         }}
       >
-        <img
+        <Image
+          layout="fill"
+          objectFit="contain"
           style={{
             height: "100%",
             left: 0,

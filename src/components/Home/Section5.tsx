@@ -126,7 +126,7 @@ export const Section5 = () => {
                 width={120}
                 src={`/color_variants/${selectedColor}.png`}
                 height={isMobile ? 458 : 670}
-                loading="lazy"
+                priority
               />
             </div>
           </Stack>

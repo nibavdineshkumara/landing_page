@@ -1,5 +1,6 @@
 import { Button, Stack, Typography } from "@mui/joy";
 import { Hidden } from "@mui/material";
+import Image from "next/image";
 
 export const Section2 = () => {
   return (
@@ -17,14 +18,20 @@ export const Section2 = () => {
         <Hidden mdUp>
           <Certified />
         </Hidden>
-        <img src="/elevator_2.jpg" style={{ flex: 1, margin: 20 }} />
+        <Image
+          alt="elevator"
+          src="/elevator_2.jpg"
+          height={659}
+          width={590}
+          style={{ flex: 1, margin: 20, alignSelf: "center" }}
+        />
         <Stack
           spacing={10}
           sx={{
             flex: 1,
-            p: { xs: 5, sm: 15 },
+            pb: { xs: 5, sm: 15 },
             px: { xs: 2, sm: 20 },
-            pt: { xs: 10 },
+            pt: { xs: 10, sm: 5 },
           }}
         >
           <Stack spacing={3} sx={{ textAlign: { xs: "center", md: "unset" } }}>

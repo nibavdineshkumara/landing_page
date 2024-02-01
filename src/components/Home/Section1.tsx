@@ -1,5 +1,6 @@
 import { Box, Button, Divider, Stack, Typography, useTheme } from "@mui/joy";
 import { useMediaQuery } from "@mui/material";
+import Image from "next/image";
 
 export const Section1 = () => {
   const theme = useTheme();
@@ -36,13 +37,16 @@ export const Section1 = () => {
             height: "100%",
             pr: { md: 15 },
             flex: { md: 6 },
+            alignItems: { xs: "center", md: "unset" },
           }}
         >
-          <img
+          <Image
             src={"/gold_elevator.svg"}
             alt="Gold Elevator"
-            height={"100%"}
-            style={{ zIndex: 2 }}
+            style={{ zIndex: 2, height: "100%" }}
+            priority
+            width={149}
+            height={1054}
           />
         </Stack>
       </Stack>

@@ -16,6 +16,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { PlayArrow } from "@mui/icons-material";
+import Image from "next/image";
 const Reviews = [
   {
     id: 1,
@@ -120,14 +121,13 @@ const VideoWithThumbnail = (props: Props) => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <div style={{ width: "100%", height: "100%" }}>
-      <img
+      <Image
+        layout="fill"
         decoding="async"
         src={props?.thumbnail}
         alt=""
         data-lazy-src={props?.thumbnail}
         data-ll-status="loaded"
-        width={"100%"}
-        height={"100%"}
       />
       <IconButton
         sx={{
