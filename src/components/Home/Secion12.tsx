@@ -34,7 +34,7 @@ export const Section12 = () => {
         sx={{
           marginTop: { xs: "50%", sm: 10 },
           //   minHeight: { xs: "100dvh", sm: "80dvh", md: "90dvh" },
-          background: "url(/mountain.svg)",
+          background: "url(/mountain.png)",
           objectFit: "fill",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
