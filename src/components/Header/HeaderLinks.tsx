@@ -1,14 +1,18 @@
-import { Link, LinkProps } from "@mui/joy";
+import { Link as JoyLink, LinkProps } from "@mui/joy";
+
+import Link from "next/link";
 
 export const HeaderLink = (props: LinkProps) => {
   return (
-    <Link
-      sx={{
-        textDecoration: "none",
-        "&:hover": { textDecoration: "none", fontWeight: "500" },
-      }}
-    >
-      {props?.children}
+    <Link href={props?.href || ""}>
+      <JoyLink
+        sx={{
+          textDecoration: "none",
+          "&:hover": { textDecoration: "none", fontWeight: "500" },
+        }}
+      >
+        {props?.children}
+      </JoyLink>
     </Link>
   );
 };
