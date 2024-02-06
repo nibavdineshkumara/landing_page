@@ -4,6 +4,7 @@ import { Provider } from "@/components/Provider";
 import Image from "next/image";
 import * as React from "react";
 import { RM } from "@request-metrics/browser-agent";
+import { Box } from "@mui/joy";
 export const metadata = {
   title: "Nibav Lifts",
   description: "Now Luxury in Every Home",
@@ -42,12 +43,19 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   });
   return (
     <html lang="en">
-      <body style={{ margin: 0 }}>
+      <body style={{ margin: 0, padding: 0 }}>
         <Provider>
-          <Header />
+          <Header disableHideOnScroll />
           <PreloadImages />
-          {props.children}
-          <Footer />
+          <Box
+            sx={{
+              height: `calc(100dvh - var(--Header-height, 0))`,
+              paddingTop: "10dvh",
+            }}
+          >
+            {props.children}
+          </Box>
+          {/* <Footer /> */}
         </Provider>
       </body>
     </html>
