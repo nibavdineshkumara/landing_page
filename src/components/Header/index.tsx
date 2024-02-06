@@ -1,6 +1,14 @@
 "use client";
 import { Close, Menu } from "@mui/icons-material";
-import { Button, Drawer, IconButton, Link, Sheet, Stack } from "@mui/joy";
+import {
+  Button,
+  Drawer,
+  GlobalStyles,
+  IconButton,
+  Link,
+  Sheet,
+  Stack,
+} from "@mui/joy";
 import { Hidden, Slide } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useScrollDirection } from "react-use-scroll-direction";
@@ -18,7 +26,10 @@ function HideOnScroll(props: Props) {
     </Slide>
   );
 }
-export const Header = () => {
+type HeaderProps = {
+  disableHideOnScroll?: boolean;
+};
+export const Header = (props: HeaderProps) => {
   const [isFixed, setIsFixed] = useState(false);
   const { isScrollingUp, isScrollingDown } = useScrollDirection();
   const [open, setOpen] = useState(false);
@@ -45,7 +56,7 @@ export const Header = () => {
   }, [isScrollingDown, isScrollingUp]);
   return (
     <>
-      <HideOnScroll trigger={isFixed}>
+      <HideOnScroll trigger={props?.disableHideOnScroll ? false : isFixed}>
         <Sheet
           sx={{
             // backdropFilter: "blur(20px)",
@@ -57,6 +68,13 @@ export const Header = () => {
           }}
           component={"header"}
         >
+          <GlobalStyles
+            styles={(theme) => ({
+              ":root": {
+                "--Header-height": "72px",
+              },
+            })}
+          />
           <Stack
             direction={"row"}
             justifyContent={"space-between"}
@@ -86,6 +104,8 @@ export const Header = () => {
                 <HeaderLink>Testimonials</HeaderLink>
                 <HeaderLink>Blogs</HeaderLink>
                 <HeaderLink>Become a Partner</HeaderLink>
+                <HeaderLink href="custom_order">Custom Order</HeaderLink>
+                <HeaderLink href="configurator">Configurator</HeaderLink>
                 <Button variant="outlined">Contact Us</Button>
               </Hidden>
               <Hidden mdUp>
