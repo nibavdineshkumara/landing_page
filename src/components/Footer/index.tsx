@@ -13,6 +13,8 @@ export const Footer = () => {
         // maskImage: "linear-gradient(black, transparent)",
         // WebkitMaskImage: "linear-gradient(black, transparent)",
         backgroundColor: "black",
+        height: "50dvh",
+        "--Footer-height": "50dvh",
       }}
       p={{ xs: 2, sm: 5, md: 10 }}
       pb={"16px !important"}
